@@ -4,23 +4,31 @@ public class Segment{ //every point on the grid is a segment which can be turned
   private int xCoord;
   private int yCoord;
 
-  public int getXCoord(){
+  public int getXCoord() {
     return xCoord; 
   }
-  public int getYCoord(){
+  public int getYCoord() {
     return yCoord; 
   }
-
-  public void incrementX(int input){
+  
+  public void setX(int x) {
+    xCoord = x; 
+  }
+  public void setY(int y) {
+    yCoord = y; 
+  }
+  
+  public void incrementX(int input) {
     xCoord += input; 
   }
-  public void incrementY(int input){
+  public void incrementY(int input) {
     yCoord += input; 
   }
   
-  public Segment(int x, int y){
+  public Segment(int x, int y) {
     xCoord = x;
     yCoord = y;
   }
+
 }
 
